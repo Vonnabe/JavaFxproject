@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="357.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginapp.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="121.0" layoutY="104.0" minHeight="16" minWidth="69" />
+      <Label layoutX="243.0" layoutY="14.0" prefHeight="54.0" prefWidth="157.0" text="Worker Info">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="60.0" prefHeight="48.0" prefWidth="105.0" text="Worker ID:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="57.0" layoutY="294.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="54.0" prefWidth="141.0" text="Back" />
+      <ChoiceBox fx:id="choiceBoxId" layoutX="206.0" layoutY="72.0" prefHeight="25.0" prefWidth="69.0" />
+      <Button fx:id="loadChoiceButton" layoutX="90.0" layoutY="41.0" mnemonicParsing="false" onAction="#loadChoice" text="Load IDs" />
+      <TextArea fx:id="workerText" layoutX="56.0" layoutY="122.0" prefHeight="164.0" prefWidth="541.0" />
+      <Button layoutX="295.0" layoutY="73.0" mnemonicParsing="false" onAction="#selectIds" prefHeight="24.0" prefWidth="69.0" text="Select" />
+      <Button layoutX="382.0" layoutY="73.0" mnemonicParsing="false" onAction="#textclear" prefHeight="24.0" prefWidth="69.0" text="Clear" />
+    </children>
+</AnchorPane>
